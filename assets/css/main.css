@@ -3009,7 +3009,7 @@ input, select, textarea {
 		}
 
 		.spotlights > section > .image {
-			background-position: center center;
+			background-position: 20% 0;
 			background-size: cover;
 			border-radius: 0;
 			display: block;
