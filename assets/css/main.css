@@ -3585,6 +3585,14 @@ input, select, textarea {
 
 /* Sidebar */
 
+	#nav-toggle {
+		display: none;
+	}
+
+	#nav-icon {
+		display: none;
+	}
+
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		background: #294D61;
@@ -3802,7 +3810,7 @@ input, select, textarea {
 			border: 0;
 			color: rgba(255, 255, 255, 0.35);
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.46em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
@@ -3930,7 +3938,27 @@ input, select, textarea {
 			#sidebar {
 				display: block;
 			}
+			
+			.menu-mobile {
+				position: fixed;
+				right: -250px;
+				width: 250px;
+				transition: 0.5s;
+			}
+				#nav-icon {
+				display: block;
+				font-size: 30px;
+				cursor: pointer;
+				position: fixed;
+				top: 5px;
+				right: 20px;
 
+			}
+			
+			#nav-toggle:checked ~ .menu-mobile {
+				right: 3.7rem;
+
+			}
 		}
 
 /* Intro */
